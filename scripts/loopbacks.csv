@@ -1,0 +1,6 @@
+loopback,description
+101,Demo Management Loopback
+201,Demo Telemetry Loopback
+301,Demo Prometheus Exporter
+401,Demo IPv6 Tunnel Endpoint
+501,Demo Customer Testing Interface
