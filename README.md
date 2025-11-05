@@ -61,9 +61,9 @@ This notebook demonstrates how to use **Ncclient** to send automated NETCONF pay
 
 3. Add your `.env` file (use the sample provided)  
    ```bash
-   DEVICE_IP=xxx.xxx.xxx.xxx
-   USERNAME=your_username
-   PASSWORD=your_password
+    XR_HOST=sandbox-iosxr-1.cisco.com
+    XR_USER=admin
+    XR_PASS=C1sco12345
    ```
 
 4. Open the notebooks in Jupyter  
