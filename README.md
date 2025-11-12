@@ -126,6 +126,14 @@ This notebook demonstrates how to use **pyATS** to orchestrate your topology usi
 - [pyATS](https://developer.cisco.com/docs/pyats/)
 - Cisco DevNet Sandbox
 
+## 📚 Links & references
+
+- [Cisco DevNet Portal](developer.cisco.com/)
+- [Cisco pyATS](developer.cisco.com/docs/pyats/)
+- [Cisco NSO](developer.cisco.com/site/nso/)
+- [NSO Always-On](devnetsandbox.cisco.com/DevNet/catalog/NSO-Always-On)
+- [IOSXR Programmability Always-On](developer.cisco.com/catalogs/sandbox/ios-xr-always-on)
+
 ---
 
 ## ⚖️ Automation vs Manual CLI — Why It Matters
