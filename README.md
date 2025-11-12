@@ -44,6 +44,20 @@ This notebook demonstrates how to use **Ncclient** to send automated NETCONF pay
 
 ---
 
+### 2️⃣ `talking_pyats_with_my_network.ipynb`  
+**🚀 CLI interaction with pyATS**
+
+**Cleaver network automation** with a Cisco-developed, open code framework!  
+This notebook demonstrates how to use **pyATS** to orchestrate your topology using learning capabilities, snapshots and more.
+
+**🧰 Prerequisites**
+- 🐍 Python 3.9+  
+- 🔌 SSH access to your Cisco IOS-XR device  
+  → Use the [Always-On Cisco IOSXR DevNet Sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/ios-xr-always-on_ios-xr-always-on#instructions)  
+- 👤 `pyATS/topology.yaml` file with credentials and device URL (included in this repo)
+
+---
+
 ## ⚙️ Setup
 
 1. Clone this repository  
@@ -66,9 +80,29 @@ This notebook demonstrates how to use **Ncclient** to send automated NETCONF pay
     XR_PASS=C1sco12345
    ```
 
+5. Add your `pyATS/topology.yaml` file (use the sample provided)
+
 4. Open the notebooks in Jupyter  
-   ```bash
-   jupyter notebook
+   ```yaml
+   testbed:
+  name: NetworkAutoDemo
+  devices:
+    sandbox1:
+      os: iosxr
+      type: router
+      platform: ASR9K
+      connections:
+        cli:
+          protocol: ssh
+          ip: sandbox-iosxr-1.cisco.com
+          port: 22
+          arguments:
+            connection_timeout: 60
+            connection_retries: 3
+      credentials:
+        default:
+          username: admin
+          password: C1sco12345
    ```
 
 ---
