@@ -3,3 +3,4 @@ backups/
 rollback_*
 *yang
 .DS_Store
+*.log

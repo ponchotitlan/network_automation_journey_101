@@ -1,0 +1,19 @@
+testbed:
+  name: NetworkAutoDemo
+devices:
+  sandbox1:
+    os: iosxr
+    type: router
+    platform: ASR9K
+    connections:
+      cli:
+        protocol: ssh
+        ip: sandbox-iosxr-1.cisco.com
+        port: 22
+        arguments:
+          connection_timeout: 60
+          connection_retries: 3
+    credentials:
+      default:
+        username: admin
+        password: C1sco12345
