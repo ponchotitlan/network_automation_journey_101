@@ -10,7 +10,7 @@
 </div></h1>
 
 Learn how to automate network devices like a pro — from CLI scripting to model-based automation!  
-This repository introduces **hands-on network automation with Python**, guiding you through two essential approaches: **Netmiko (CLI-based)** and **Ncclient (NETCONF-based)**.
+This repository introduces **hands-on network automation with Python**, guiding you through three essential approaches: **Netmiko (CLI-based)**, **pyATS (CLI-based, but much more robust)**, and **Ncclient (NETCONF-based)**.
 
 ---
 
@@ -80,30 +80,31 @@ This notebook demonstrates how to use **pyATS** to orchestrate your topology usi
     XR_PASS=C1sco12345
    ```
 
-5. Add your `pyATS/topology.yaml` file (use the sample provided)
+4. Add your `pyATS/topology.yaml` file (use the sample provided)
 
-4. Open the notebooks in Jupyter  
    ```yaml
    testbed:
-  name: NetworkAutoDemo
-  devices:
-    sandbox1:
-      os: iosxr
-      type: router
-      platform: ASR9K
-      connections:
-        cli:
-          protocol: ssh
-          ip: sandbox-iosxr-1.cisco.com
-          port: 22
-          arguments:
-            connection_timeout: 60
-            connection_retries: 3
-      credentials:
-        default:
-          username: admin
-          password: C1sco12345
+    name: NetworkAutoDemo
+    devices:
+      sandbox1:
+        os: iosxr
+        type: router
+        platform: ASR9K
+        connections:
+          cli:
+            protocol: ssh
+            ip: sandbox-iosxr-1.cisco.com
+            port: 22
+            arguments:
+              connection_timeout: 60
+              connection_retries: 3
+        credentials:
+          default:
+            username: admin
+            password: C1sco12345
    ```
+
+5. Open the notebooks in Jupyter.
 
 ---
 
@@ -122,6 +123,7 @@ This notebook demonstrates how to use **pyATS** to orchestrate your topology usi
 - Jupyter Notebooks  
 - [Netmiko](https://github.com/ktbyers/netmiko)  
 - [Ncclient](https://github.com/ncclient/ncclient)  
+- [pyATS](https://developer.cisco.com/docs/pyats/)
 - Cisco DevNet Sandbox
 
 ---
